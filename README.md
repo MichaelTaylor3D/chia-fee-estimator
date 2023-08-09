@@ -6,6 +6,8 @@ This module provides functionalities to estimate transaction fees in the Chia ne
 
 The module retrieves the current fee estimate from a Chia full node. If the estimate exceeds certain thresholds or if the full node is unavailable, it falls back to a default fee provided in the configuration.
 
+> **Note:** For an accurate fee estimate, ensure you are running the Chia FullNode. If the FullNode is not running or is unreachable, the estimator will fallback to the default fee.
+
 ## Default Configuration
 
 The module comes pre-configured with the following settings:
@@ -50,7 +52,7 @@ Updates the current configuration of the module:
 Fetching the current fee estimate:
 
 ```javascript
-const chiaFeeEstimator = require('path-to-your-module');
+const chiaFeeEstimator = require('chia-fee-estimator');
 
 (async () => {
   const fee = await chiaFeeEstimator.getFeeEstimate();
@@ -62,3 +64,10 @@ const chiaFeeEstimator = require('path-to-your-module');
 
 The module logs information and errors to the console during its operations. Ensure to check the logs for any issues related to fetching the fee estimate.
 
+## Support the Project
+
+If you found this tool helpful, consider donating to support the development of more Chia Datalayer Tools.
+
+**Donation address:** `xch1es9faez5evlvdyfjdjth40fazfm3c9gptds0reuhryf30y3kl67qtcsc83`
+
+Your support is greatly appreciated!

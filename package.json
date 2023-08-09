@@ -1,5 +1,5 @@
 {
-  "name": "chia-get-fee-estimate",
+  "name": "chia-fee-estimator",
   "version": "1.0.0",
   "description": "Get the estimated fee needed for a speedy transaction",
   "main": "index.js",
