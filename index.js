@@ -12,7 +12,7 @@ const getBaseOptions = (config) => {
   if (!config) {
     config = currentConfig;
   }
-  
+
   const chiaRoot = getChiaRoot();
   let cert, key;
 
@@ -57,6 +57,10 @@ const getBaseOptions = (config) => {
 };
 
 const getFeeEstimate = async (config) => {
+  if (!config) {
+    config = currentConfig;
+  }
+  
   const { cert, key } = getBaseOptions(config);
 
   if (!config.full_node_host) {
