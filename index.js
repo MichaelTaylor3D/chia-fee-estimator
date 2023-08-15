@@ -85,7 +85,9 @@ const getFeeEstimate = async (config) => {
 
     // If the mojos are over 1 trillion, use the default fee
     if (mojos > convertXchToMojos(1)) {
-      console.log(`Current fee estimate is too high: ${mojos} mojos`);
+      console.log(
+        `Current fee estimate is too high: ${mojos} mojos, using default fee. ${config.default_fee} mojos`
+      );
       return config.default_fee;
     }
 
@@ -93,7 +95,7 @@ const getFeeEstimate = async (config) => {
     return mojos;
   } catch {
     console.log(
-      "Error fetching fee estimate from the fullnode. Using default fee."
+      `Fullnode not available to get Fee Estimate. Using default fee. ${config.default_fee} mojos`
     );
     return config.default_fee;
   }
