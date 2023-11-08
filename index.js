@@ -1,6 +1,7 @@
 const superagent = require("superagent");
 const https = require("https");
 const defaultConfig = require("./defaultConfig");
+const chiaRoot = require("chia-root-resolver");
 
 let currentConfig = defaultConfig;
 
