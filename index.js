@@ -3,6 +3,7 @@ const https = require("https");
 const defaultConfig = require("./defaultConfig");
 const { getChiaRoot  } = require("chia-root-resolver");
 const path = require("path");
+const os = require("os");
 
 let currentConfig = defaultConfig;
 
