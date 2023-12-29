@@ -40,10 +40,10 @@ const getBaseOptions = (config) => {
     }
 
     const certFile = path.resolve(
-      `${certificateFolderPath}/data_layer/private_data_layer.crt`
+      `${certificateFolderPath}/full_node/private_full_node.crt`
     );
     const keyFile = path.resolve(
-      `${certificateFolderPath}/data_layer/private_data_layer.key`
+      `${certificateFolderPath}/full_node/private_full_node.key`
     );
 
     cert = fs.readFileSync(certFile);

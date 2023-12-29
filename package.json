@@ -1,6 +1,6 @@
 {
   "name": "chia-fee-estimator",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Get the estimated fee needed for a speedy transaction",
   "main": "index.js",
   "types": "index.d.ts",
